@@ -41,7 +41,7 @@
     auto add_method(const string_type path, const string_type types, H&& h) \
     -> rt const                                                         \
     {                                                                   \
-        std::string key = std::string(path._s?:"") + "," + (types._s?:""); \
+        std::string key = std::string((path._s != nullptr) ? path._s :"") + "," + ((types._s != nullptr) ? types._s :""); \
         _handlers[key].push_front(                                      \
             std::unique_ptr<handler>(new handler_type<r ht>(h)));       \
         _add_method(path, types,                                        \
@@ -198,25 +198,46 @@ namespace lo {
           { return lo_address_errno(address); }
 
         std::string errstr() const
-          { return std::string(lo_address_errstr(address)?:""); }
+        {
+			const char* s = lo_address_errstr(address);
+			return (s != nullptr) ? s : "";
+		}
 
         std::string hostname() const
-          { return std::string(lo_address_get_hostname(address)?:""); }
+		{
+			const char* s = lo_address_get_hostname(address);
+			return (s != nullptr) ? s : "";
+		}
 
         std::string port() const
-          { return std::string(lo_address_get_port(address)?:""); }
+		{
+			const char* s = lo_address_get_port(address);
+			return (s != nullptr) ? s : "";
+		}
 
         int protocol() const
           { return lo_address_get_protocol(address); }
 
         std::string url() const
-          { return std::string(lo_address_get_url(address)?:""); }
+		{
+			const char* s = lo_address_get_url(address);
+			return (s != nullptr) ? s : "";
+		}
 
         std::string iface() const
-          { return std::string(lo_address_get_iface(address)?:""); }
+		{
+			const char* s = lo_address_get_iface(address);
+			return (s != nullptr) ? s : "";
+		}
 
         void set_iface(const string_type &iface, const string_type &ip)
-          { lo_address_set_iface(address, iface._s?:0, ip._s?:0); }
+		{
+			const char* ifx = iface._s;
+			if (ifx == nullptr) ifx = 0;
+			const char* ipx = ip._s;
+			if (ipx == nullptr) ipx = 0;
+			lo_address_set_iface(address, ifx, ipx);
+		}
 
         int set_tcp_nodelay(int enable)
           { return lo_address_set_tcp_nodelay(address, enable); }
@@ -362,7 +383,10 @@ namespace lo {
             { return lo_message_get_timestamp(message); }
 
         std::string types() const
-            { return std::string(lo_message_get_types(message)?:""); }
+		{
+			const char* s = lo_message_get_types(message);
+			return (s != nullptr) ? s : "";
+		}
 
         int argc() const
             { return lo_message_get_argc(message); }
@@ -474,8 +498,8 @@ namespace lo {
                const string_type &iface="", const string_type &ip="", lo_err_handler err_h=0)
             : Server((iface._s || ip._s)
                      ? lo_server_new_multicast_iface(group, port,
-                                                     iface._s?:0,
-                                                     ip._s?:0, err_h)
+                                                     iface._s != nullptr ? iface._s : 0,
+                                                     ip._s != nullptr ? ip._s : 0, err_h)
                      : lo_server_new_multicast(group, port, err_h)) {}
 
         /** Destructor */
@@ -511,7 +535,7 @@ namespace lo {
         LO_ADD_METHOD( (const char*, const Message&),
                        ((char*)0, Message((lo_message)0)),
                        (path, Message(msg)) );
-        LO_ADD_METHOD( (lo_arg**, int), ((lo_arg**)0, (int)0), (argv, argc) )
+        LO_ADD_METHOD( (lo_arg**, int), ((lo_arg**)0, (int)0), (argv, argc) );
         LO_ADD_METHOD( (lo_arg**, int, const Message& ),
                        ((lo_arg**)0, (int)0, Message((lo_message)0)),
                        (argv, argc, Message(msg)) );
@@ -522,8 +546,8 @@ namespace lo {
 
         void del_method(const string_type &path, const string_type &typespec)
         {
-            _handlers.erase(std::string(path._s?:"") + ","
-                            + (typespec._s?:""));
+            _handlers.erase(std::string((path._s != nullptr) ? path._s : "") + ","
+                            + ((typespec._s != nullptr) ? typespec._s : ""));
             lo_server_del_method(server, path, typespec);
         }
 
@@ -580,7 +604,10 @@ namespace lo {
             { return lo_server_get_protocol(server); }
 
         std::string url() const
-            { return std::string(lo_server_get_url(server)?:""); }
+		{
+			const char* s = lo_server_get_url(server);
+			return (s != nullptr) ? s : "";
+		}
 
         int enable_queue(int queue_enabled,
                          int dispatch_remaining=1)
@@ -895,13 +922,13 @@ namespace lo {
         Message get_message(int index, std::string &path) const
             { const char *p;
               lo_message m=lo_bundle_get_message(bundle, index, &p);
-              path = p?:0;
+              path = (p != nullptr) ? p : 0;
               return Message(m); }
 
         PathMsg get_message(int index) const
             { const char *p;
               lo_message m = lo_bundle_get_message(bundle, index, &p);
-              return PathMsg(p?:0, m); }
+              return PathMsg((p != nullptr) ? p : 0, m); }
 
         Bundle get_bundle(int index) const
             { return lo_bundle_get_bundle(bundle, index); }
