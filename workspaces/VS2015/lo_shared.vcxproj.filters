@@ -41,6 +41,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="src\liblo.def" />
+    <None Include="src\liblo.def" />
   </ItemGroup>
 </Project>

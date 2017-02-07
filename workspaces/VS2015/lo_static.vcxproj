@@ -244,6 +244,9 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_LIB;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -260,7 +263,7 @@
     <Lib>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>pthreadVC2.lib;</AdditionalDependencies>
+      <AdditionalDependencies>pthreadVC2.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -280,6 +283,9 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_LIB;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -296,7 +302,7 @@
     <Lib>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
       <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;</AdditionalLibraryDirectories>
-      <AdditionalDependencies>pthreadVC2.lib;</AdditionalDependencies>
+      <AdditionalDependencies>pthreadVC2.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
