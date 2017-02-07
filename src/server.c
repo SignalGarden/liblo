@@ -69,6 +69,13 @@
 #include "lo/lo.h"
 #include "lo/lo_throw.h"
 
+// HACK: string.h does not have index() function..
+// so replace it with more modern strchr.
+#if _ANDROID
+#define index(x,y) strchr(x,y)
+#endif
+
+
 typedef struct {
     lo_timetag ts;
     char *path;

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Danny\SignalGarden\ElectrolyteThirdParty\LGPL\liblo\workspaces\VS2015\CMakeFiles\b5fe5fa74c1a94d506b41325c8ce8b1a\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BCA20CFD-B568-3913-80CA-23C45025B660}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
