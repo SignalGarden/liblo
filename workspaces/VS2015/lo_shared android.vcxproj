@@ -116,42 +116,42 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Android\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Android\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;</PreprocessorDefinitions>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>gnu++11</CppLanguageStandard>
@@ -164,7 +164,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -178,7 +178,7 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;</PreprocessorDefinitions>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>gnu++11</CppLanguageStandard>
@@ -191,7 +191,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -205,7 +205,7 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;</PreprocessorDefinitions>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>gnu++11</CppLanguageStandard>
@@ -218,7 +218,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -232,7 +232,7 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;</PreprocessorDefinitions>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>gnu++11</CppLanguageStandard>
@@ -245,7 +245,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_ANDROID;DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";lo_shared_EXPORTS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>

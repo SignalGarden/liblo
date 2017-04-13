@@ -99,8 +99,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">liblo</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">liblo</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
@@ -109,8 +109,8 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">liblo</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">liblo</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
@@ -119,8 +119,8 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">liblo</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">liblo</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
@@ -129,8 +129,8 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">liblo</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">liblo</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -141,40 +141,40 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IntDir>$(ElectrolyteThirdPartyProjectsPath)\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
-    <OutDir>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>$(ElectrolyteEnginePath)\thirdParty\Intermediate\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <OutDir>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\pthreads.2;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -191,10 +191,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -204,15 +204,15 @@
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;user32.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib;pthreadVC2.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/Debug/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/Debug/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -220,7 +220,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -237,10 +237,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -250,15 +250,15 @@
     <Link>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;user32.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib;pthreadVC2.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/Debug/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/Debug/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -266,7 +266,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -284,10 +284,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -297,15 +297,15 @@
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/Release/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/Release/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -313,7 +313,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -331,10 +331,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -344,15 +344,15 @@
     <Link>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/Release/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/Release/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -360,7 +360,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -377,10 +377,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -390,15 +390,15 @@
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;user32.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib;pthreadVC2.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/MinSizeRel/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/MinSizeRel/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -406,7 +406,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -423,10 +423,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -436,15 +436,15 @@
     <Link>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;user32.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib;pthreadVC2.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/MinSizeRel/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/MinSizeRel/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -452,7 +452,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -468,10 +468,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -481,15 +481,15 @@
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;user32.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib;pthreadVC2.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/RelWithDebInfo/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/RelWithDebInfo/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -497,7 +497,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -513,10 +513,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;-DLIBLO_DLL;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";lo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015;$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015;$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\cmake\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -526,32 +526,32 @@
     <Link>
       <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>pthreadVC2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;user32.lib;wsock32.lib;ws2_32.lib;iphlpapi.lib;pthreadVC2.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ElectrolyteThirdPartyProjectsPath)\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\pthreads-w32-2-9-1-release\Pre-built.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ElectrolyteThirdPartyProjectsPath)\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(ElectrolyteThirdPartyProjectsPath)/LGPL/liblo/workspaces/VS2015/RelWithDebInfo/lo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(ElectrolyteEnginePath)\thirdParty\lib\Windows\$(platform)\$(configuration)\liblo_import.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ElectrolyteEnginePath)\thirdParty\externals/LGPL/liblo/workspaces/VS2015/RelWithDebInfo/lo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
-      <ModuleDefinitionFile>$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\workspaces\VS2015\src\liblo.def</ModuleDefinitionFile>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\address.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\blob.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\bundle.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\message.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\method.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\pattern_match.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\send.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\server.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\timetag.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\version.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\server_thread.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\address.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\blob.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\bundle.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\message.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\method.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\pattern_match.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\send.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\server.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\timetag.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\version.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\server_thread.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\liblo.def" />

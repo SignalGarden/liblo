@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\address.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\blob.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\bundle.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\message.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\method.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\pattern_match.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\send.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\server.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\timetag.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\version.c" />
-    <ClCompile Include="$(ElectrolyteThirdPartyProjectsPath)\LGPL\liblo\src\server_thread.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\address.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\blob.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\bundle.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\message.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\method.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\pattern_match.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\send.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\server.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\timetag.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\version.c" />
+    <ClCompile Include="$(ElectrolyteEnginePath)\thirdParty\externals\LGPL\liblo\src\server_thread.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
